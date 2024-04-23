@@ -1,0 +1,18 @@
+{
+    "about-me": "About Me",
+    "home": "Home",
+    "skills": "Skills",
+    "work-experience": "Work Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+
+    "web-developer": "Web Developer",
+    "contact-me-cto": "Contact Me!",
+    "and-i-am-a": "And I'm a",
+    "hi-my-name-is": "Hi, my name is",
+
+    "about-me-title": "ABOUT ME: WHO AM I AND WHAT DO I DO?",
+    "about-me-paragraph-1": "My name is Willy Emanuel Antunez Gonzales, I am 27 years old, and I live in Tegucigalpa, the capital of Honduras.",
+    "about-me-paragraph-2": "I am a Web Developer with expertise in HTML, CSS, JavaScript, React, Redux, SCSS, Git+GitHub, Node.js, Express, PostgreSQL, MongoDB, among other tools.",
+    "about-me-paragraph-3": "With these skills, I am capable of developing comprehensive solutions in the field of web development. I am a self-taught individual committed to learning new things that help me perform better in my professional field."
+}

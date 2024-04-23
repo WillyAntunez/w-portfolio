@@ -1,0 +1,12 @@
+.landing-page {
+    &__desk-image {
+        width: 95%;
+        margin: 0 auto;
+        max-width: 1330px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+@import "../../../styles/variables.scss";
+
+@keyframes flicker {
+
+	0%,
+	18%,
+	22%,
+	25%,
+	53%,
+	57%,
+	100% {
+		text-shadow: 0 0 42px $primary-purple, 0 0 82px $primary-purple, 0 0 92px $primary-purple,
+			0 0 102px $primary-purple, 0 0 151px $primary-purple;
+	}
+
+	20%,
+	24%,
+	55% {
+		text-shadow: 0 0 22px $primary-purple, 0 0 42px $primary-purple, 0 0 62px $primary-purple,
+			0 0 82px $primary-purple, 0 0 121px $primary-purple;
+	}
+}
+
+.landing-hero {
+	height: 100vh;
+	max-height: 633px;
+	background: linear-gradient(90deg, rgba(25, 25, 33, 0.45) 0%, transparent 20%, transparent 50%, transparent 80%, rgba(25, 25, 33, 0.45) 100%), linear-gradient(180deg, transparent 0%, #181818 91%, #181818 100%),
+		url("/assets/images/hero-bg.png");
+	background-size: cover;
+	background-position: center;
+	padding: 32px;
+	padding-bottom: 53px;
+
+	&__inside-container {
+		width: 100%;
+		max-width: 1300px;
+		margin: 0 auto;
+
+		height: 100%;
+
+		display: flex;
+		align-items: center;
+		position: relative;
+
+
+	}
+
+	&__top-text {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		margin-left: auto;
+		max-width: 614px;
+
+		&__name {
+			font-size: 69px;
+			font-weight: bold;
+			color: $primary-purple;
+			animation: flicker 1.5s infinite alternate;
+		}
+
+		&__title {
+			color: $primary-green;
+			font-size: 46px;
+			display: inline;
+		}
+
+		&__cta {
+			width: 100%;
+			max-width: 270px;
+			font-size: 24px;
+			background: none;
+			border: 2px solid $primary-orange;
+			color: $primary-orange;
+			font-weight: 300 !important;
+			padding-top: 2px;
+			padding-bottom: 2px;
+			margin: 0 auto;
+			margin-top: 18px;
+			cursor: pointer;
+			border-radius: 3px;
+			transition: all 0.2s ease-in-out;
+
+			&:hover {
+				background: $primary-orange;
+				color: $white;
+			}
+		}
+	}
+
+	&__bottom-line {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background: $multicolor-gradient;
+		height: 16px;
+
+	}
+}

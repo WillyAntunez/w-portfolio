@@ -1,0 +1,18 @@
+{
+    "about-me": "Acerca de mí",
+    "home": "Inicio",
+    "skills": "Habilidades",
+    "work-experience": "Experiencia Laboral",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+
+    "hi-my-name-is": "Hola, mi nombre es",
+    "and-i-am-a": "y soy un",
+    "web-developer": "Desarrollador Web",
+    "contact-me-cto": "¡Contáctame!",
+
+    "about-me-title": "SOBBRE MI: ¿QUIÉN SOY Y A QUÉ ME DEDICO?",
+    "about-me-paragraph-1": "Mi nombre es Willy Emanuel Antunez Gonzales, tengo 27 años y vivo en Tegucigalpa, capital de Honduras.",
+    "about-me-paragraph-2": "Soy un Desarrollador Web con conocimientos en HTML, CSS, JavaScript, React, Redux, SCSS, Git+GitHub, Node.js, Express, PostgreSQL, MongoDB, entre  otras herramientas.",
+    "about-me-paragraph-3": "Con estas habilidades, soy capaz de desarrollar soluciones completas en el ámbito del desarrollo web. Soy un autodidacta comprometido con aprender cosas nuevas que me ayuden a desempeñarme mejor en mi campo laboral."
+}

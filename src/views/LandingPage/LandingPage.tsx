@@ -13,7 +13,7 @@ export const LandingPage = () => {
 
             <LandingAboutMe />
 
-            <div className="landing-page__desk-image mt-2">
+            <div className="landing-page__desk-image mt-3">
                 <img src="/assets/images/desk.png" alt="desk-image" />
             </div>
 

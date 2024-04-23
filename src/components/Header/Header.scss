@@ -27,6 +27,14 @@
             display: flex;
             gap: 90px;
 
+            @media (max-width: 1100px) {
+                gap: 40px;
+            }
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+
             li {
                 list-style: none;
 

@@ -24,7 +24,9 @@
 .landing-hero {
 	height: 100vh;
 	max-height: 633px;
-	background: linear-gradient(90deg, rgba(25, 25, 33, 0.45) 0%, transparent 20%, transparent 50%, transparent 80%, rgba(25, 25, 33, 0.45) 100%), linear-gradient(180deg, transparent 0%, #181818 91%, #181818 100%),
+	background: linear-gradient(90deg,
+			rgba(25, 25, 33, 0.45) 0%, transparent 20%, transparent 50%, transparent 80%,
+			rgba(25, 25, 33, 0.45) 100%), linear-gradient(180deg, transparent 0%, #181818 91%, #181818 100%),
 		url("/assets/images/hero-bg.png");
 	background-size: cover;
 	background-position: center;
@@ -41,8 +43,6 @@
 		display: flex;
 		align-items: center;
 		position: relative;
-
-
 	}
 
 	&__top-text {
@@ -57,12 +57,32 @@
 			font-weight: bold;
 			color: $primary-purple;
 			animation: flicker 1.5s infinite alternate;
+
+
+
+			@media screen and (max-width: 768px) {
+				font-size: 46px;
+			}
+
+			@media screen and (max-width: 500px) {
+				font-size: 36px;
+			}
 		}
 
 		&__title {
 			color: $primary-green;
 			font-size: 46px;
 			display: inline;
+
+			@media screen and (max-width: 768px) {
+				font-size: 46px;
+				display: block;
+			}
+
+			@media screen and (max-width: 500px) {
+
+				font-size: 36px;
+			}
 		}
 
 		&__cta {
@@ -86,6 +106,8 @@
 				color: $white;
 			}
 		}
+
+
 	}
 
 	&__bottom-line {
@@ -97,4 +119,6 @@
 		height: 16px;
 
 	}
+
+
 }

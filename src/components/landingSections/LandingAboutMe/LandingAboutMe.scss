@@ -1,4 +1,4 @@
-@import "../../../styles/variables.scss";
+@import '../../../styles/variables.scss';
 
 .landing-about-me {
     display: flex;
@@ -9,6 +9,21 @@
     grid-template-columns: 1fr 649px;
 
     padding-top: 73px;
+
+    @media (max-width: 1350px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 1200px) {
+        grid-template-columns: 1fr 40%;
+    }
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+
+        padding-top: 30px;
+    }
+
 
 
     &__left {
@@ -21,24 +36,43 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
 
+    &__image {
+        width: 291.41px;
+        height: 291.41px;
 
+        background-color: $dark-purple-2;
+        padding: 6px;
+        border-radius: 100%;
 
-        &__image {
-            width: 291.41px;
-            height: 291.41px;
+        box-shadow: $extended-purple-shadow;
 
-            background-color: $dark-purple-2;
-            padding: 6px;
-            border-radius: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            filter: grayscale(100%);
+        }
 
-            box-shadow: $extended-purple-shadow;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
 
-            img {
+        &--mobile {
+            display: none;
+            margin: 0 auto;
 
-                width: 100%;
-                height: 100%;
-                filter: grayscale(100%);
+            width: 200px;
+            height: 200px;
+
+            @media screen and (max-width: 768px) {
+                display: block;
+
+            }
+
+            @media screen and (max-width: 500px) {
+                width: 180px;
+                height: 180px;
             }
         }
     }

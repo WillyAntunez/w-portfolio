@@ -12,6 +12,15 @@ export const LandingAboutMe = () => {
                 <h2 className="title">{t('about-me-title')}</h2>
                 <div className="title-underline"></div>
 
+                {
+                    <div className="landing-about-me__image landing-about-me__image--mobile mt-1">
+                        <img
+                            src="/assets/images/me.png"
+                            alt="Me (Willy Antunez)"
+                        />
+                    </div>
+                }
+
                 <p className="paragraph mt-2">{t('about-me-paragraph-1')}</p>
                 <p className="paragraph mt-2">{t('about-me-paragraph-2')}</p>
                 <p className="paragraph mt-2">{t('about-me-paragraph-3')}</p>
@@ -19,7 +28,7 @@ export const LandingAboutMe = () => {
 
             {/* right */}
             <div className="landing-about-me__right">
-                <div className="landing-about-me__right__image">
+                <div className="landing-about-me__image">
                     <img src="/assets/images/me.png" alt="Me (Willy Antunez)" />
                 </div>
             </div>

@@ -3,6 +3,7 @@ import { LandingAboutMe } from '@components/landingSections/LandingAboutMe/Landi
 import { LandingHero } from '@components/landingSections/LandingHero/LandingHero';
 
 import './LandingPage.scss';
+import { LandingSkills } from '@components/landingSections/LandingSkills/LandingSkills';
 
 export const LandingPage = () => {
     return (
@@ -13,9 +14,11 @@ export const LandingPage = () => {
 
             <LandingAboutMe />
 
-            <div className="landing-page__desk-image mt-3">
+            <div className="landing-page__desk-image mt-4">
                 <img src="/assets/images/desk.png" alt="desk-image" />
             </div>
+
+            <LandingSkills />
 
             {/* TODO: DELETE THIS */}
             <div

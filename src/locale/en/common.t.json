@@ -12,7 +12,18 @@
     "hi-my-name-is": "Hi, my name is",
 
     "about-me-title": "ABOUT ME: WHO AM I AND WHAT DO I DO?",
-    "about-me-paragraph-1": "My name is Willy Emanuel Antunez Gonzales, I am 27 years old, and I live in Tegucigalpa, the capital of Honduras.",
+    "about-me-paragraph-1": "My name is Willy Emanuel Antunez Gonzales and I live in Tegucigalpa, the capital of Honduras.",
     "about-me-paragraph-2": "I am a Web Developer with expertise in HTML, CSS, JavaScript, React, Redux, SCSS, Git+GitHub, Node.js, Express, PostgreSQL, MongoDB, among other tools.",
-    "about-me-paragraph-3": "With these skills, I am capable of developing comprehensive solutions in the field of web development. I am a self-taught individual committed to learning new things that help me perform better in my professional field."
+    "about-me-paragraph-3": "With these skills, I am capable of developing comprehensive solutions in the field of web development. I am a self-taught individual committed to learning new things that help me perform better in my professional field.",
+
+    "skills-title": "My Skills!",
+    "skills-paragraph": "Among my technical skills, my ability for full-stack web development stands out, primarily using JavaScript-based tools for both client-side and server-side development.",
+    "frontend-skills-title": "Front End development",
+    "frontend-skills-paragraph": "I have experience in developing web applications using HTML, CSS, JavaScript, React, Redux, SCSS, and other tools.",
+    "backend-skills-title": "Back End development",
+    "backend-skills-paragraph": "I have experience in developing web applications on the backend using Node.js, Express, PostgreSQL, MongoDB, and other tools.",
+    "design-skills-title": "Design tools",
+    "design-skills-paragraph": "I have knowledge of design tools that complement my frontend development, such as prototyping in Figma, creating and editing vector graphics with Adobe Illustrator, and editing and retouching images using Photoshop.",
+    "others-skills-title": "Other skills",
+    "others-skills-paragraph": "I have experience using Git+GitHub/Bitbucket for version control and I have knowledge of Scrum that I have applied in my work experience, among others."
 }

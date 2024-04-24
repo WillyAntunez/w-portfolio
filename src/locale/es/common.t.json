@@ -11,8 +11,19 @@
     "web-developer": "Desarrollador Web",
     "contact-me-cto": "¡Contáctame!",
 
-    "about-me-title": "SOBBRE MI: ¿QUIÉN SOY Y A QUÉ ME DEDICO?",
-    "about-me-paragraph-1": "Mi nombre es Willy Emanuel Antunez Gonzales, tengo 27 años y vivo en Tegucigalpa, capital de Honduras.",
+    "about-me-title": "SOBRE MÍ: ¿QUIÉN SOY Y A QUÉ ME DEDICO?",
+    "about-me-paragraph-1": "Mi nombre es Willy Emanuel Antunez Gonzales y vivo en Tegucigalpa, capital de Honduras.",
     "about-me-paragraph-2": "Soy un Desarrollador Web con conocimientos en HTML, CSS, JavaScript, React, Redux, SCSS, Git+GitHub, Node.js, Express, PostgreSQL, MongoDB, entre  otras herramientas.",
-    "about-me-paragraph-3": "Con estas habilidades, soy capaz de desarrollar soluciones completas en el ámbito del desarrollo web. Soy un autodidacta comprometido con aprender cosas nuevas que me ayuden a desempeñarme mejor en mi campo laboral."
+    "about-me-paragraph-3": "Con estas habilidades, soy capaz de desarrollar soluciones completas en el ámbito del desarrollo web. Soy un autodidacta comprometido con aprender cosas nuevas que me ayuden a desempeñarme mejor en mi campo laboral.",
+
+    "skills-title": "¡Mis habilidades técnicas!",
+    "skills-paragraph": "Entre mis competencias tecnicas destaca mi habilidad para el desarrollo web full stack, principalmente con herramientas basadas en el lenguaje Javascript del lado del cliente y servidor.",
+    "frontend-skills-title": "Desarrollo Frontend",
+    "frontend-skills-paragraph": "Tengo experiencia en el desarrollo de aplicaciones web utilizando HTML, CSS, JavaScript, React, Redux, SCSS y otras herramientas.",
+    "backend-skills-title": "Desarrollo Backend",
+    "backend-skills-paragraph": "Tengo experiencia en el desarrollo de aplicaciones web backend utilizando Node.js, Express, PostgreSQL, MongoDB y otras herramientas.",
+    "design-skills-title": "Herramientas de diseño",
+    "design-skills-paragraph": "Tengo conocimientos en herramientas de diseño que complementan mi desarrollo frontend, como el prototipado en Figma, la creación y edición de gráficos vectoriales con Adobe Illustrator, y la edición y retoque de imágenes utilizando Photoshop.",
+    "others-skills-title": "Otras habilidades",
+    "others-skills-paragraph": "Tengo experiencia en el uso de Git+GitHub/Bitbucket para control de versiones y tengo conocimientos de Scrum que he aplicado en mi experiencia laboral, entre otros."
 }

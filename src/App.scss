@@ -74,6 +74,16 @@ p {
 	}
 }
 
+p {
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 1.5;
+
+	@media screen and (max-width: 500px) {
+		font-size: 18px;
+	}
+}
+
 .paragraph {
 	font-size: 22px;
 	font-weight: 300;
@@ -107,4 +117,8 @@ p {
 
 .mt-3 {
 	margin-top: 30px;
+}
+
+.mt-4 {
+	margin-top: 46px;
 }

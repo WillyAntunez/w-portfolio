@@ -52,6 +52,22 @@ export const skills = {
 export const data = {
     fullName: 'Willy Emanuel Antunez Gonzales',
     shortName: 'Willy Antunez',
+    workExperience: [
+        {
+            company: 'Smart Insight Solutions',
+            startDate: '2023',
+            endDate: '2024',
+            jobTitle: {
+                en: 'Frontend Developer',
+                es: 'Desarrollador Frontend',
+            },
+            jobDescription: {
+                es: 'En este trabajo yo participaba de forma colaborativa con otros miembros del equipo de desarrollo para diseñar y programar interfaces de aplicaciones web a medida para varios proyectos de la empresa y sus clientes.',
+                en: 'In this job I participated collaboratively with other members of the development team to design and program custom web application interfaces for various projects of the company and its clients.',
+            },
+            logo: '/assets/images/logos/smart-insight-solutions.png',
+        },
+    ],
     technicalSkills: {
         frontend: [
             {

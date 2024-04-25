@@ -9,10 +9,8 @@
         font-size: 21px;
         font-weight: 200;
 
-
         @media screen and (max-width: 767px) {
             display: none;
-
         }
     }
 
@@ -58,5 +56,4 @@
         background-color: $primary-green;
         position: absolute;
     }
-
 }

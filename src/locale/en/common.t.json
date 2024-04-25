@@ -25,5 +25,7 @@
     "design-skills-title": "Design tools",
     "design-skills-paragraph": "I have knowledge of design tools that complement my frontend development, such as prototyping in Figma, creating and editing vector graphics with Adobe Illustrator, and editing and retouching images using Photoshop.",
     "others-skills-title": "Other skills",
-    "others-skills-paragraph": "I have experience using Git+GitHub/Bitbucket for version control and I have knowledge of Scrum that I have applied in my work experience, among others."
+    "others-skills-paragraph": "I have experience using Git+GitHub/Bitbucket for version control and I have knowledge of Scrum that I have applied in my work experience, among others.",
+
+    "work-experience-title": "My Work Experience"
 }

@@ -3,6 +3,7 @@ import { LandingAboutMe } from '@components/landingSections/LandingAboutMe/Landi
 import { LandingHero } from '@components/landingSections/LandingHero/LandingHero';
 import { LandingSkills } from '@components/landingSections/LandingSkills/LandingSkills';
 import { LandingWorkExperience } from '@components/landingSections/LandingWorkExperience/LandingWorkExperience';
+import { LandingProjects } from '@components/landingSections/LandingProjects/LandingProjects';
 
 import './LandingPage.scss';
 
@@ -20,6 +21,8 @@ export const LandingPage = () => {
             </div>
 
             <LandingWorkExperience />
+
+            <LandingProjects />
 
             <LandingSkills />
 

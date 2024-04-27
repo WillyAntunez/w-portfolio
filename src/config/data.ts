@@ -1,51 +1,68 @@
 export const skills = {
-    javascript: {
-        label: 'JavaScript',
-        color: '#f0db4f',
-    },
-    typescript: {
-        label: 'TypeScript',
-        color: '#007acc',
-    },
-    react: {
-        label: 'React',
-        color: '#61dafb',
-    },
-    redux: {
-        label: 'Redux',
-        color: '#764abc',
-    },
-    nodejs: {
-        label: 'Node.js',
-        color: '#68a063',
-    },
-    express: {
-        label: 'Express',
-        color: '#000000',
-    },
-    mongodb: {
-        label: 'MongoDB',
-        color: '#13aa52',
-    },
-    postgresql: {
-        label: 'PostgreSQL',
-        color: '#336791',
+    css: {
+        label: 'CSS',
+        color: '#264de4',
+        textColor: '#fff',
     },
     html: {
         label: 'HTML',
         color: '#e34c26',
+        textColor: '#fff',
+    },
+    javascript: {
+        label: 'JavaScript',
+        color: '#f0db4f',
+        textColor: '#000',
+    },
+    typescript: {
+        label: 'TypeScript',
+        color: '#007acc',
+        textColor: '#fff',
+    },
+    react: {
+        label: 'React',
+        color: '#61dafb',
+        textColor: '#000',
+    },
+    redux: {
+        label: 'Redux',
+        color: '#764abc',
+        textColor: '#fff',
+    },
+    nodejs: {
+        label: 'Node.js',
+        color: '#68a063',
+        textColor: '#fff',
+    },
+    express: {
+        label: 'Express',
+        color: '#000000',
+        textColor: '#fff',
+    },
+    mongodb: {
+        label: 'MongoDB',
+        color: '#13aa52',
+        textColor: '#fff',
+    },
+    postgresql: {
+        label: 'PostgreSQL',
+        color: '#336791',
+        textColor: '#fff',
     },
     sass: {
         label: 'Sass',
         color: '#c69',
+        textColor: '#fff',
     },
     figma: {
         label: 'Figma',
-        color: '#f24e1e',
+        color: '#ff7262',
+        textColor: '#fff',
     },
     node: {
         label: 'Node.js',
         color: '#68a063',
+        textColor: '#fff',
     },
 };
 
@@ -66,6 +83,51 @@ export const data = {
                 en: 'In this job I participated collaboratively with other members of the development team to design and program custom web application interfaces for various projects of the company and its clients.',
             },
             logo: '/assets/images/logos/smart-insight-solutions.png',
+        },
+    ],
+    projects: [
+        {
+            image: '/assets/images/projects/spotify-remake.png',
+            title: 'Spotify Clone',
+            description: {
+                en: 'An exact clone of the spotify web player made in React, Typescript and SCSS',
+                es: 'Un clon exacto del reproductor web de spotify hecho en React, Typescript y SCSS',
+            },
+            url: 'https://willyantunez.github.io/spotify-remake/#/search',
+            tags: [
+                skills.javascript,
+                skills.typescript,
+                skills.react,
+                skills.css,
+                skills.html,
+                skills.sass,
+            ],
+        },
+        {
+            image: '/assets/images/projects/my-first-portfolio.png',
+            title: 'My first portfolio',
+            description: {
+                en: 'My first portfolio made with HTML, CSS, SASS and React.js',
+                es: 'Mi primer portafolio hecho con HTML, CSS, SASS y React.js',
+            },
+            url: 'https://willyantunez.github.io/willy-antunez-portfolio/',
+            tags: [
+                skills.javascript,
+                skills.react,
+                skills.css,
+                skills.html,
+                skills.sass,
+            ],
+        },
+        {
+            image: '/assets/images/projects/pokedex.png',
+            title: 'Pokedex',
+            description: {
+                en: 'A simple Pokedex made with Vanilla Javascript based on a Figma design.',
+                es: 'Una simple Pokedex hecha con Javascript puro basado en un diseño en Figma.',
+            },
+            tags: [skills.javascript, skills.css, skills.html, skills.figma],
+            url: 'https://willyantunez.github.io/pokedex/',
         },
     ],
     technicalSkills: {

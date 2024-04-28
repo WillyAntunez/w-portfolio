@@ -69,6 +69,11 @@ export const skills = {
 export const data = {
     fullName: 'Willy Emanuel Antunez Gonzales',
     shortName: 'Willy Antunez',
+    email: 'willyantunezg@gmail.com',
+    phone: '+504 88908796',
+    whatsapp: '50488908796',
+    linkedin: 'https://www.linkedin.com/in/willy-antunez/',
+    github: 'https://github.com/WillyAntunez/',
     workExperience: [
         {
             company: 'Smart Insight Solutions',

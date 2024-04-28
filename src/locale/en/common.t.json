@@ -30,5 +30,26 @@
     "work-experience-title": "My Work Experience",
 
     "projects-title": "Some of my projects",
-    "view-project": "View Project"
+    "view-project": "View Project",
+
+    "contact-title": "Contact Me!",
+    "contact-left-title": "Let's start a project together!",
+    "contact-left-paragraph": "Hello! I'm excited to collaborate with you on your upcoming project. Feel free to get in touch with me to discuss your ideas and how I can help bring them to life.",
+    "contact-email": "Email",
+    "contact-phone": "Phone",
+
+    "whatsapp-message": "Hello Willy! I'm interested in collaborating with you on a project.",
+    "contact-right-title": "Send me a message!",
+
+    "contact-name-label": "What's your name?",
+    "contact-name-placeholder": "Jhon Doe",
+    "contact-email-label": "What's your email?",
+    "contact-email-placeholder": "JhonDoe@myemail.com",
+    "contact-organization-label": "What's your organization? (Optional)",
+    "contact-organization-placeholder": "Jhon Doe Inc.",
+    "contact-reason-label": "What's the reason for contacting me?",
+    "contact-reason-placeholder": "Freelance project, job offer, etc.",
+    "contact-message-label": "What's your message?",
+    "contact-message-placeholder": "Hello Willy! Could you help me with...",
+    "contact-send-button": "Send Message"
 }

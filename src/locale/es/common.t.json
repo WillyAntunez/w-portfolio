@@ -28,5 +28,28 @@
     "others-skills-paragraph": "Tengo experiencia en el uso de Git+GitHub/Bitbucket para control de versiones y tengo conocimientos de Scrum que he aplicado en mi experiencia laboral, entre otros.",
 
     "work-experience-title": "Mi Experiencia Laboral",
-    "view-project": "Ver proyecto"
+
+    "projects-title": "Algunos de mis proyectos",
+    "view-project": "Ver proyecto",
+
+    "contact-title": "¡Contáctame!",
+    "contact-left-title": "Empecemos un proyecto juntos",
+    "contact-left-paragraph": "¡Hola! Estoy emocionado de colaborar contigo en tu próximo proyecto. No dudes en ponerte en contacto conmigo para discutir tus ideas y cómo puedo ayudarte a hacerlas realidad.",
+    "contact-email": "Correo Electrónico",
+    "contact-phone": "Teléfono",
+
+    "whatsapp-message": "¡Hola Willy! Estoy interesado en trabajar contigo en un proyecto. ¿Podemos hablar?",
+    "contact-right-title": "¡Enviame un mensaje!",
+
+    "contact-name-label": "¿Cuál es tu nombre?",
+    "contact-name-placeholder": "Juanito Perez",
+    "contact-email-label": "¿Cuál es tu correo electrónico?",
+    "contact-email-placeholder": "JuanitoPerez@micorreo.com",
+    "contact-organization-label": "¿Cuál es el nombre de tu organización? (Opcional)",
+    "contact-organization-placeholder": "Juanito Perez S.A. de C.V.",
+    "contact-reason-label": "¿Cuál es el motivo de tu contacto?",
+    "contact-reason-placeholder": "Proyecto freelance, Oferta laboral, etc.",
+    "contact-message-label": "Escribe tu mensaje",
+    "contact-message-placeholder": "Hola Willy, puedes ayudarme con...",
+    "contact-send-button": "Enviar mensaje"
 }

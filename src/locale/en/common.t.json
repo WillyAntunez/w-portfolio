@@ -51,5 +51,9 @@
     "contact-reason-placeholder": "Freelance project, job offer, etc.",
     "contact-message-label": "What's your message?",
     "contact-message-placeholder": "Hello Willy! Could you help me with...",
-    "contact-send-button": "Send Message"
+    "contact-send-button": "Send Message",
+
+    "footer-text-1": "Thank you for taking the time to visit my website!",
+    "footer-text-2": "You're great!",
+    "footer-copy-right": "© 2024 Willy Emanuel Antunez Gonzales. All rights reserved."
 }

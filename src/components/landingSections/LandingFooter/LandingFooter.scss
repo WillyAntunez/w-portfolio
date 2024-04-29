@@ -1,0 +1,40 @@
+@import "/src/styles/variables.scss";
+
+.landing-footer {
+    width: 100%;
+    background-color: $dark-gray;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    padding-bottom: 20px;
+
+
+    &__top-line {
+        background: $multicolor-gradient;
+        height: 10px;
+        width: 100%;
+    }
+
+    &__content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__medal {
+        width: 62.92px;
+    }
+
+    &__text {
+        font-size: 26px;
+        font-weight: 300;
+    }
+
+    &__copy-right {
+        font-size: 14px;
+    }
+}

@@ -54,6 +54,7 @@
         position: relative;
         padding: 50px 39px 89px 34px;
         margin-bottom: 15px;
+        box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.44);
 
         @media screen and (max-width: 500px) {
             padding: 30px 20px 89px 20px;
@@ -82,6 +83,13 @@
                 margin-left: -25px;
             }
 
+            @media screen and (max-width: 400px) {
+                height: 70px;
+                padding-left: 10px;
+            }
+
+
+
             &::before {
                 content: "";
                 position: absolute;
@@ -93,6 +101,12 @@
                 border-top: 21px solid $primary-orange;
                 border-bottom: 31px solid $primary-orange;
                 border-right: 23px solid transparent;
+
+                @media screen and (max-width: 400px) {
+                    border-top: 30px solid $primary-orange;
+                    border-bottom: 30px solid $primary-orange;
+                    border-right: 10px solid transparent;
+                }
             }
 
 
@@ -156,6 +170,9 @@
             bottom: 0;
             display: flex;
             justify-content: center;
+
+
+
         }
 
         &__send-button {
@@ -173,6 +190,10 @@
             &:hover {
                 background-color: lighten($primary-orange, 3%);
             }
+
+            @media screen and (max-width: 500px) {
+                padding: 16px 50px 19px 50px;
+            }
         }
     }
 
@@ -182,6 +203,9 @@
         gap: 23px;
 
         &__info {
+
+            width: 100%;
+
             &__title {
                 font-size: 24px;
                 font-weight: 500;
@@ -191,8 +215,12 @@
                 font-size: 24px;
                 font-weight: 300;
                 margin-top: 10px;
+                line-break: auto;
+                word-break: break-all;
 
                 a {
+                    word-break: break-all;
+                    line-break: auto;
                     color: inherit;
                 }
             }

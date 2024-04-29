@@ -7,6 +7,7 @@ import { LandingProjects } from '@components/landingSections/LandingProjects/Lan
 import { LandingContact } from '@components/landingSections/LandingContent/LandingContact';
 
 import './LandingPage.scss';
+import { LandingFooter } from '@components/landingSections/LandingFooter/LandingFooter';
 
 export const LandingPage = () => {
     return (
@@ -29,12 +30,7 @@ export const LandingPage = () => {
 
             <LandingContact />
 
-            {/* TODO: DELETE THIS */}
-            <div
-                style={{
-                    marginTop: '100vh',
-                }}
-            ></div>
+            <LandingFooter />
         </div>
     );
 };

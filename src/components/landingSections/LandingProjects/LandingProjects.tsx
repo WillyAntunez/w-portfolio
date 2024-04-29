@@ -4,11 +4,11 @@ import { landingPageIds } from '@config/ui';
 import { data } from '@config/data';
 
 export const LandingProjects = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     return (
         <div
-            className="landing-projects container mt-4"
+            className="landing-projects container"
             id={landingPageIds.projects}
         >
             <h2 className="title">{t('projects-title')}</h2>
@@ -26,8 +26,13 @@ export const LandingProjects = () => {
                                     {project.title}
                                 </h4>
                                 <p className="landing-projects__project-card__description">
-                                    {project.description.en}
+                                    {
+                                        project.description[
+                                            i18n.language as 'en' | 'es'
+                                        ]
+                                    }
                                 </p>
+
                                 <div className="landing-projects__project-card__tags">
                                     {project.tags.map((tag, index) => (
                                         <span

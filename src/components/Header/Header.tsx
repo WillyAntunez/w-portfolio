@@ -4,9 +4,127 @@ import './Header.scss';
 import { useEffect, useState } from 'react';
 import { LanguageSwitch } from '@components/LanguageSwitch/LanguageSwitch';
 
-export const Header = () => {
+type HeaderNavListProps = {
+    onClickAny?: () => void;
+    activeId?: string;
+};
+
+const HeaderNavList = ({
+    onClickAny = () => {},
+    activeId,
+}: HeaderNavListProps) => {
     const { t } = useTranslation();
 
+    return (
+        <nav>
+            <ul className="landing-header__nav-list">
+                <li
+                    onClick={() => {
+                        onClickAny();
+                    }}
+                >
+                    <a
+                        className={
+                            activeId === landingPageIds.hero
+                                ? 'landing-header__active-link'
+                                : ''
+                        }
+                        href={`#${landingPageIds.hero}`}
+                    >
+                        {t('home')}
+                    </a>
+                </li>
+
+                <li
+                    onClick={() => {
+                        onClickAny();
+                    }}
+                >
+                    <a
+                        href={`#${landingPageIds.about}`}
+                        className={
+                            activeId === landingPageIds.about
+                                ? 'landing-header__active-link'
+                                : ''
+                        }
+                    >
+                        {t('about-me')}
+                    </a>
+                </li>
+
+                <li
+                    onClick={() => {
+                        onClickAny();
+                    }}
+                >
+                    <a
+                        href={`#${landingPageIds.workExperience}`}
+                        className={
+                            activeId === landingPageIds.workExperience
+                                ? 'landing-header__active-link'
+                                : ''
+                        }
+                    >
+                        {t('work-experience')}
+                    </a>
+                </li>
+
+                <li
+                    onClick={() => {
+                        onClickAny();
+                    }}
+                >
+                    <a
+                        href={`#${landingPageIds.projects}`}
+                        className={
+                            activeId === landingPageIds.projects
+                                ? 'landing-header__active-link'
+                                : ''
+                        }
+                    >
+                        {t('projects')}
+                    </a>
+                </li>
+
+                <li
+                    onClick={() => {
+                        onClickAny();
+                    }}
+                >
+                    <a
+                        href={`#${landingPageIds.skills}`}
+                        className={
+                            activeId === landingPageIds.skills
+                                ? 'landing-header__active-link'
+                                : ''
+                        }
+                    >
+                        {t('skills')}
+                    </a>
+                </li>
+
+                <li
+                    onClick={() => {
+                        onClickAny();
+                    }}
+                >
+                    <a
+                        href={`#${landingPageIds.contact}`}
+                        className={
+                            activeId === landingPageIds.contact
+                                ? 'landing-header__active-link'
+                                : ''
+                        }
+                    >
+                        {t('contact')}
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    );
+};
+
+export const Header = () => {
     const [showHeaderBar, setShowHeaderBar] = useState(false);
     const [lastScrollTop, setLastScrollTop] = useState(0);
     const [currentScroll, setCurrentScroll] = useState(0);
@@ -85,8 +203,19 @@ export const Header = () => {
         };
     }, [activeId]);
 
+    const [isMobileAsideActive, setIsMobileAsideActive] = useState(false);
+
+    const onOpenMobileAside = () => {
+        setIsMobileAsideActive(true);
+    };
+
+    const onCloseMobileAside = () => {
+        setIsMobileAsideActive(false);
+    };
+
     return (
         <>
+            {/* header */}
             <header
                 className={`landing-header 
             `}
@@ -94,151 +223,89 @@ export const Header = () => {
             >
                 <div className="landing-header__main-container">
                     {/* right */}
-                    <div className="landing-header__right-container"></div>
+                    <div className="landing-header__right-container">
+                        <button
+                            className="landing-header__hamb-icon"
+                            onClick={onOpenMobileAside}
+                        >
+                            <img
+                                src="/assets/svg/hamb-icon.svg"
+                                alt="open menu icon"
+                            />
+                        </button>
+                    </div>
                     {/* left */}
                     <div className="landing-header__left-container">
-                        <nav>
-                            <ul className="landing-header__left-container__nav-list">
-                                <li>
-                                    <a href={`#${landingPageIds.about}`}>
-                                        {t('about-me')}
-                                    </a>
-                                </li>
+                        <HeaderNavList activeId={activeId} />
 
-                                <li>
-                                    <a
-                                        href={`#${landingPageIds.workExperience}`}
-                                    >
-                                        {t('work-experience')}
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href={`#${landingPageIds.projects}`}>
-                                        {t('projects')}
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href={`#${landingPageIds.skills}`}>
-                                        {t('skills')}
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href={`#${landingPageIds.contact}`}>
-                                        {t('contact')}
-                                    </a>
-                                </li>
-
-                                <LanguageSwitch />
-                            </ul>
-                        </nav>
+                        <LanguageSwitch />
                     </div>
                 </div>
-
-                {/* {currentScroll > 300 ? (
-                <div className={`landing-header__underline `}></div>
-            ) : null} */}
             </header>
 
+            {/* floating header */}
             <header
                 className={`landing-header 
                     ${currentScroll > 100 ? 'landing-header--scrolled' : ''}
                     ${showHeaderBar && currentScroll > 100 ? '' : 'landing-header--hide'}
                     
-            `}
+                `}
                 id="landing-header"
             >
                 <div className="landing-header__main-container">
                     {/* right */}
-                    <div className="landing-header__right-container"></div>
+                    <div className="landing-header__right-container">
+                        <button
+                            className="landing-header__hamb-icon"
+                            onClick={onOpenMobileAside}
+                        >
+                            <img
+                                src="/assets/svg/hamb-icon.svg"
+                                alt="open menu icon"
+                            />
+                        </button>
+                    </div>
                     {/* left */}
                     <div className="landing-header__left-container">
-                        <nav>
-                            <ul className="landing-header__left-container__nav-list">
-                                <li>
-                                    <a
-                                        className={
-                                            activeId === landingPageIds.hero
-                                                ? 'active'
-                                                : ''
-                                        }
-                                        href={`#${landingPageIds.hero}`}
-                                    >
-                                        {t('home')}
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        className={
-                                            activeId === landingPageIds.about
-                                                ? 'active'
-                                                : ''
-                                        }
-                                        href={`#${landingPageIds.about}`}
-                                    >
-                                        {t('about-me')}
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        className={
-                                            activeId ===
-                                            landingPageIds.workExperience
-                                                ? 'active'
-                                                : ''
-                                        }
-                                        href={`#${landingPageIds.workExperience}`}
-                                    >
-                                        {t('work-experience')}
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        className={
-                                            activeId === landingPageIds.projects
-                                                ? 'active'
-                                                : ''
-                                        }
-                                        href={`#${landingPageIds.projects}`}
-                                    >
-                                        {t('projects')}
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        className={
-                                            activeId === landingPageIds.skills
-                                                ? 'active'
-                                                : ''
-                                        }
-                                        href={`#${landingPageIds.skills}`}
-                                    >
-                                        {t('skills')}
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        className={
-                                            activeId === landingPageIds.contact
-                                                ? 'active'
-                                                : ''
-                                        }
-                                        href={`#${landingPageIds.contact}`}
-                                    >
-                                        {t('contact')}
-                                    </a>
-                                </li>
+                        <HeaderNavList activeId={activeId} />
 
-                                <LanguageSwitch />
-                            </ul>
-                        </nav>
+                        <LanguageSwitch />
                     </div>
                 </div>
 
                 <div className={`landing-header__underline `}></div>
             </header>
+
+            {/* mobile aside */}
+            <div
+                className={`landing-header__mobile-aside-container 
+                    ${isMobileAsideActive ? 'landing-header__mobile-aside-container--active' : ''}
+                `}
+                onClick={onCloseMobileAside}
+            ></div>
+
+            <aside
+                className={`landing-header__mobile-aside
+                    ${isMobileAsideActive ? 'landing-header__mobile-aside--active' : ''}
+                `}
+            >
+                <button
+                    className="landing-header__mobile-aside__close-icon"
+                    onClick={onCloseMobileAside}
+                >
+                    <img
+                        src="/assets/svg/close-icon.svg"
+                        alt="close menu icon"
+                    />
+                </button>
+                <HeaderNavList
+                    onClickAny={onCloseMobileAside}
+                    activeId={activeId}
+                />
+                <div className="landing-header__mobile-aside__language-switch-container">
+                    <LanguageSwitch />
+                </div>
+            </aside>
         </>
     );
 };

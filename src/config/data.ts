@@ -64,6 +64,11 @@ export const skills = {
         color: '#68a063',
         textColor: '#fff',
     },
+    i18next: {
+        label: 'i18next',
+        color: '#178d80',
+        textColor: '#fff',
+    },
 };
 
 export const data = {
@@ -92,8 +97,32 @@ export const data = {
     ],
     projects: [
         {
+            image: '/assets/images/projects/this-portfolio.png',
+            title: {
+                en: 'This Portfolio',
+                es: 'Este Portfolio',
+            },
+            description: {
+                en: 'This portfolio is a personal project made with React, Typescript and SCSS, responsive and multi-language.',
+                es: 'Este portfolio es un proyecto personal hecho con React, Typescript y SCSS, responsive y multi-idioma.',
+            },
+            url: 'https://github.com/WillyAntunez/w-portfolio',
+            tags: [
+                skills.javascript,
+                skills.typescript,
+                skills.react,
+                skills.css,
+                skills.html,
+                skills.sass,
+                skills.i18next,
+            ],
+        },
+        {
             image: '/assets/images/projects/spotify-remake.png',
-            title: 'Spotify Clone',
+            title: {
+                en: 'Spotify clone',
+                es: 'Spotify clon',
+            },
             description: {
                 en: 'An exact clone of the spotify web player made in React, Typescript and SCSS',
                 es: 'Un clon exacto del reproductor web de spotify hecho en React, Typescript y SCSS',
@@ -110,7 +139,10 @@ export const data = {
         },
         {
             image: '/assets/images/projects/my-first-portfolio.png',
-            title: 'My first portfolio',
+            title: {
+                en: 'My first Portfolio',
+                es: 'Mi primer Portafolio',
+            },
             description: {
                 en: 'My first portfolio made with HTML, CSS, SASS and React.js',
                 es: 'Mi primer portafolio hecho con HTML, CSS, SASS y React.js',
@@ -126,7 +158,10 @@ export const data = {
         },
         {
             image: '/assets/images/projects/pokedex.png',
-            title: 'Pokedex',
+            title: {
+                en: 'Pokedex',
+                es: 'Pokedex',
+            },
             description: {
                 en: 'A simple Pokedex made with Vanilla Javascript based on a Figma design.',
                 es: 'Una simple Pokedex hecha con Javascript puro basado en un diseño en Figma.',

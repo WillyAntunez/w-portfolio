@@ -18,12 +18,21 @@ export const LandingProjects = () => {
                 {data.projects.map((project, index) => (
                     <div className="landing-projects__project-card" key={index}>
                         <div className="landing-projects__project-card__image">
-                            <img src={project.image} alt={project.title} />
+                            <img
+                                src={project.image}
+                                alt={
+                                    project.title[i18n.language as 'en' | 'es']
+                                }
+                            />
                         </div>
                         <div className="landing-projects__project-card__content">
                             <div>
                                 <h4 className="landing-projects__project-card__title">
-                                    {project.title}
+                                    {
+                                        project.title[
+                                            i18n.language as 'en' | 'es'
+                                        ]
+                                    }
                                 </h4>
                                 <p className="landing-projects__project-card__description">
                                     {

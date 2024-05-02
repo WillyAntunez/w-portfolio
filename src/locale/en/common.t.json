@@ -53,6 +53,37 @@
     "contact-message-placeholder": "Hello Willy! Could you help me with...",
     "contact-send-button": "Send Message",
 
+    "contact-name-required": "Name is required",
+    "contact-name-min": "Name must be at least 2 characters",
+    "contact-name-max": "Name must be at most 50 characters",
+    "contact-name-invalid": "Must be a valid name, only letters and spaces",
+
+    "contact-email-required": "Email is required",
+    "contact-email-max": "Email must be at most 100 characters",
+    "contact-email-invalid": "Must be a valid email",
+
+    "contact-organization-max": "Organization must be at most 100 characters",
+    "contact-organization-min": "Organization must be at least 2 characters or empty",
+    "contact-organization-invalid": "Must be a valid organization name",
+
+    "contact-reason-required": "Reason is required",
+    "contact-reason-min": "Reason must be at least 5 characters",
+    "contact-reason-max": "Reason must be at most 200 characters",
+
+    "contact-message-required": "Message is required",
+    "contact-message-min": "Message must be at least 10 characters",
+    "contact-message-max": "Message must be at most 2000 characters",
+
+    "sending-email-message": "Sending email",
+    "email-sent-success-title": "Email sent successfully!",
+    "email-sent-success-message": "Thank you for contacting me! I will get back to you as soon as possible.",
+
+    "email-sent-error-title": "Error sending email",
+    "email-sent-error-message": "An error occurred while sending the email. Please try again later.",
+    "modal-confirm-button-text": "Ok",
+
+    "max-emails-reached-error": "You have reached the maximum number of emails that can be sent today. Please try again later.",
+
     "footer-text-1": "Thank you for taking the time to visit my website!",
     "footer-text-2": "You're great!",
     "footer-copy-right": "© 2024 Willy Emanuel Antunez Gonzales. All rights reserved."

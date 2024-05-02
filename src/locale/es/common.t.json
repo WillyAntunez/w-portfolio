@@ -53,6 +53,38 @@
     "contact-message-placeholder": "Hola Willy, puedes ayudarme con...",
     "contact-send-button": "Enviar mensaje",
 
+    "contact-name-required": "El nombre es requerido",
+    "contact-name-min": "El nombre debe tener al menos 2 caracteres",
+    "contact-name-max": "El nombre debe tener menos de 50 caracteres",
+    "contact-name-invalid": "Debe ser un nombre válido, sin números ni caracteres especiales",
+
+    "contact-email-required": "El correo electrónico es requerido",
+    "contact-email-max": "El correo electrónico debe tener menos de 100 caracteres",
+    "contact-email-invalid": "El correo electrónico no es válido",
+
+    "contact-organization-max": "El nombre de la organización debe tener menos de 100 caracteres",
+    "contact-organization-min": "El nombre de la organización debe tener al menos 2 caracteres o estar vacio",
+    "contact-organization-invalid": "El nombre de la organización no es válido",
+
+    "contact-reason-required": "El motivo de contacto es requerido",
+    "contact-reason-min": "El motivo de contacto debe tener al menos 2 caracteres",
+    "contact-reason-max": "El motivo de contacto debe tener menos de 200 caracteres",
+
+    "contact-message-required": "El mensaje es requerido",
+    "contact-message-min": "El mensaje debe tener al menos 10 caracteres",
+    "contact-message-max": "El mensaje debe tener menos de 500 caracteres",
+
+    "sending-email-message": "Enviando mensaje",
+
+    "email-sent-success-title": "¡Mensaje enviado con éxito!",
+    "email-sent-success-message": "Gracias por ponerte en contacto conmigo. Te responderé lo más pronto posible.",
+
+    "max-emails-reached-error": "Has alcanzado el límite de mensajes que puedes enviar en un día. Por favor, inténtalo de nuevo mañana.",
+
+    "email-sent-error-title": "¡Error al enviar el mensaje!",
+    "email-sent-error-message": "Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.",
+    "modal-confirm-button-text": "Aceptar",
+
     "footer-text-1": "¡Gracias por tomarte el tiempo de visitar mi sitio web!",
     "footer-text-2": "¡Eres genial!",
     "footer-copy-right": "© 2024 Willy Emanuel Antunez Gonzales. Todos los derechos reservados."

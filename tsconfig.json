@@ -26,9 +26,10 @@
             "@views/*": ["src/views/*"],
             "@styles/*": ["src/styles/*"],
             "@utils/*": ["src/utils/*"],
-            "@config/*": ["src/config/*"]
+            "@config/*": ["src/config/*"],
+            "@services/*": ["src/services/*"]
         }
     },
-    "include": ["src"],
+    "include": ["src", "src/types"],
     "references": [{ "path": "./tsconfig.node.json" }]
 }
